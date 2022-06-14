@@ -1,0 +1,62 @@
+.about-buttons{
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  min-width: 237px;
+  margin-bottom: 2rem;
+  margin-top: 0.75rem;
+}
+
+.about-button-item{
+
+  .btn{
+    display: block;
+  }
+}
+
+.about-col{
+
+  &-img.col{
+    position: relative;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+
+    img{
+      display: block;
+      max-width: 100%;
+      height: auto;
+      padding: 0 20px;
+    }
+
+    &::before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      background: url('../assets/images/circle_grid.png') 0 0 repeat;
+      width: 50vw;
+      padding-top: 81%;
+      z-index: -1;
+    }
+  }
+
+  @media(min-width: 768px) {
+
+    &-content.col{
+      flex: 0 0 55%;
+      max-width: 55%;
+    }
+
+    &-img.col{
+      flex: 0 0 45%;
+      max-width: 45%;
+      padding-top: 0;
+    }
+  }
+}
+
+.arrow-link{
+  padding-right: 2rem;
+  background: url('../assets/images/svg/arrow.svg') 100% 50%/12px 12px no-repeat;
+}

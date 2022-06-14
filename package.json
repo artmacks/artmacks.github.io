@@ -1,0 +1,37 @@
+{
+  "name": "Kuraray",
+  "version": "1.0.0",
+  "description": "Kuraray Template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "browser-sync": "^2.26.12",
+    "cssnano": "^5.1.11",
+    "del": "^6.1.1",
+    "gulp": "^4.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-minify-cssnames": "^2.1.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-selectors": "^0.1.10",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^10.0.1",
+    "plumber": "^0.4.8",
+    "postcss-sort-media-queries": "^4.2.1",
+    "sass": "^1.52.3"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "IE 11"
+  ]
+}

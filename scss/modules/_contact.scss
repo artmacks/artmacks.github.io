@@ -1,0 +1,38 @@
+.btn.btn-contact{
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  left: 20px;
+  z-index: 10;
+  background: #00b0e9;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+  justify-content: center;
+
+
+  @media (min-width: 576px) {
+    right: 0;
+    left: auto;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  > span{
+    padding-right: 38px;
+  }
+
+  > svg, > span{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &:hover, &:focus, &:active{
+    background: darken(#00b0e9, 10%);
+  }
+}

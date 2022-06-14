@@ -1,0 +1,157 @@
+header{
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 100;
+}
+
+.header-wrapper{
+  position: relative;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.top-row{
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  .col-logo{
+    flex: 0 0 163px;
+    max-width: 163px;
+  }
+
+  .col-navigation{
+    flex: 0 0 auto;
+  }
+}
+
+.main-navigation{
+  display: flex;
+  column-gap: 3.75rem;
+  align-items: center;
+
+  @media (min-width: 992px) {
+    height: auto !important;
+  }
+
+  ul.nav{
+    display: flex;
+    align-items: center;
+    column-gap: 3.75rem;
+
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+.language-switcher{
+
+  &-wrapper{
+    display: flex;
+
+    li:first-child a{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    li:last-child a{
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    a{
+      display: block;
+      width: 3.125rem;
+      line-height: 1.55rem;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #f2f3f5;
+      text-align: center;
+
+      &.is-active{
+        background: #666f8a;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  .main-navigation{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    z-index: 10000;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    &.animating{
+      transition: all 0.5s ease-in-out;
+    }
+    &.opened{
+      opacity: 1;
+    }
+
+    &.closed{
+      opacity: 0;
+    }
+
+    .nav, .language-switcher{
+      flex: 0 0 100%;
+    }
+
+    ul.nav{
+      flex-wrap: wrap;
+      padding: 0 20px;
+
+      > li{
+        flex: 0 0 100%;
+        border-top: 1px solid #707070;
+
+        > a{
+          display: block;
+          padding: 1rem 0;
+
+          @media (max-width: 991px) {
+            padding-right: 3rem;
+            background: url('../assets/images/svg/menu_arrow.svg') 100% 50%/auto 16px no-repeat;
+          }
+        }
+
+        &:last-child{
+          border-bottom: 1px solid #707070;
+        }
+      }
+    }
+
+    .language-switcher{
+      padding: 1.5rem 20px;
+
+      &-wrapper{
+        > li{
+          flex: 1 1 auto;
+        }
+
+        a{
+          font-size: 1rem;
+          line-height: 2.15rem;
+          width: 100%;
+        }
+      }
+    }
+
+    &.animating + .menu-burger-block{
+      pointer-events: none;
+    }
+  }
+}
