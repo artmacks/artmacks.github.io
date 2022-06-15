@@ -33,13 +33,14 @@
 
 .section-title{
   font-size: 2rem;
-  //line-height: 2.25rem;
-  line-height: 2.65rem;
+  line-height: 1.075;
   font-weight: 600;
   margin-bottom: 2rem;
+  color: #010f3b;
 
   @media (min-width: 768px) {
     font-size: 2.875rem;
+    margin-bottom: 1.5rem;
   }
 
   &.decorated{
@@ -51,7 +52,7 @@
       width: 6.375rem;
       height: 0.25rem;
       background: #00b0e9;
-      margin-top: 0.5rem;
+      margin-top: 1.35rem;
     }
   }
 
@@ -63,6 +64,11 @@
 .section-content{
   font-size: 1.125rem;
   line-height: 1.55;
+  color: #010f3b;
+
+  @media (min-width: 1280px) {
+    font-size: 1.25rem;
+  }
 
   p{
     margin-bottom: 1em;
@@ -73,5 +79,10 @@
   }
 }
 
-
+.h1.section-title{
+  @media (min-width: 768px) {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
 

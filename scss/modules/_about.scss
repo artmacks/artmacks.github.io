@@ -26,6 +26,10 @@
       max-width: 100%;
       height: auto;
       padding: 0 20px;
+
+      @media(min-width: 768px) {
+        padding: 0;
+      }
     }
 
     &::before{
@@ -44,13 +48,27 @@
   @media(min-width: 768px) {
 
     &-content.col{
-      flex: 0 0 55%;
-      max-width: 55%;
+      flex: 0 0 52%;
+      max-width: 52%;
     }
 
     &-img.col{
-      flex: 0 0 45%;
-      max-width: 45%;
+      flex: 0 0 48%;
+      max-width: 48%;
+      padding-top: 0;
+    }
+  }
+
+  @media(min-width: 992px) {
+
+    &-content.col{
+      flex: 0 0 57%;
+      max-width: 57%;
+    }
+
+    &-img.col{
+      flex: 0 0 43%;
+      max-width: 43%;
       padding-top: 0;
     }
   }

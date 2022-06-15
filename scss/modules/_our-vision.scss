@@ -14,15 +14,11 @@
 .our-vision-col-title{
 
   &.decorated::after{
-    margin-top: 1.75rem;
+    margin-top: 1.25rem;
   }
 
   @media (min-width: 768px) {
     margin-left: 50%;
-
-    &.decorated::after{
-      margin-top: 0.15rem;
-    }
   }
 }
 .our-vision-col-image img{
